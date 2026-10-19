@@ -1,12 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="/app.js" defer></script>
-</head>
-<body>
-	<p id="p"></p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Get User Form -->
+    <form id="getUserForm">
+      <h2>Get A User</h2>
+      <input type="number" placeholder="Enter UserID" id="getUserInput" />
+      <button id="getUserButton" type="submit">Get User</button>
+      <p id="getUserParagraph">Enter a UserID to see user details</p>
+    </form>
+    <!-- Get Users Form -->
+    <form id="getUsersForm">
+      <h2>Get All Users</h2>
+      <button id="getUsersButton" type="submit">Get Users</button>
+      <ul id="getUsersList"></ul>
+    </form>
+    <!-- Post User Form -->
+    <form id="postUserForm">
+      <h2>Create A New User</h2>
+      <input type="text" placeholder="Enter User name" id="postUserNameInput" />
+      <input type="tel" placeholder="Enter User Phone" id="postUserPhoneInput" />
+      <button id="postUserButton" type="submit">Post User</button>
+      <p id="postUserParagraph"></p>
+    </form>
+    <!-- Put User Form -->
+    <form id="putUserForm">
+      <h2>Update A Existing User (With PUT)</h2>
+      <input type="number" placeholder="Enter UserID" id="putUserInput" />
+      <input type="text" placeholder="Enter User name" id="putUserNameInput" />
+      <input type="tel" placeholder="Enter User Phone" id="putUserPhoneInput" />
+      <button id="putUserButton" type="submit">Put User</button>
+      <p id="putUserParagraph"></p>
+    </form>
+    <!-- PATCH User Form -->
+    <form id="patchUserForm">
+      <h2>Update A Existing User (With PATCH)</h2>
+      <input type="number" placeholder="Enter UserID" id="patchUserInput" />
+      <input type="text" placeholder="Enter User name" id="patchUserNameInput" />
+      <input type="tel" placeholder="Enter User Phone" id="patchUserPhoneInput" />
+      <button id="patchUserButton" type="submit">Patch User</button>
+      <p id="patchUserParagraph"></p>
+    </form>
+    <!-- DELETE User Form -->
+    <form id="deleteUserForm">
+      <h2>Delete A User</h2>
+      <input type="number" placeholder="Enter UserID" id="deleteUserInput" />
+      <button id="deleteUserButton" type="submit">Get User</button>
+      <p id="deleteUserParagraph">Enter a UserID to delete user details</p>
+    </form>
+  </body>
 </html>
